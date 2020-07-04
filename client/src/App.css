@@ -1,0 +1,148 @@
+:root{
+    --mainblack: #000000;
+    --mainblue: hsl(143, 58%, 51%);
+    --mainWhite: #ffffff;
+    --mainBg: #f3ecec6c;
+}
+
+/* Navbar */
+
+.nav-link{
+    color: white !important;
+}
+
+/* Banner Section */
+
+.mainbanner{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),url('./images/mainbanner.jpeg');
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.banner{
+    color: white;
+    width: 80vh;
+    line-height: 1.5;
+}
+.banner h4{
+   font-size: 40px;
+   font-weight: 800;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-transform: capitalize;
+   line-height: 1.5;
+}
+
+.banner .btn-warning{
+    background-color: var(--mainblue) !important;
+    border: none;
+    border-radius:10px 10px;
+    color: var(--mainblack);
+    font-size: 16px;
+    width: 25vh;
+    margin: 0 auto;
+    height: 30px;
+}
+.arrow{
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--mainWhite);
+}
+
+/* Description homepages */
+
+.desc-wrapper{
+    background-color: var(--mainBg);
+    height: auto;
+    padding-bottom: 10px;
+}
+.card-body{
+    color: var(--mainWhite);
+}
+
+.footer{
+    height: 40vh;
+}
+
+
+/* Products Pages */
+
+.productBanner{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),url('./images/featured-one.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Recents */
+
+.Recent{
+    background-color: var(--mainBg);
+    box-shadow: 0.5px 0.5px var(--mainblack);
+    padding-bottom: 10px;
+}
+.Recent-H{
+    color: var(--mainblue);
+    font-size: 25px;
+    font-weight: 900;
+    font-family: monospace;
+    padding: 1px;
+}
+.pro-Img{
+    width: 50%;
+}
+
+.product-Card{
+    height: 30vh;
+    border: 2px solid var(--mainblack);
+    margin: 0 1px;
+    border-radius: 2px;
+    padding: 0px;
+}
+.prod-desc-row p{
+    line-height: 10px;
+    padding: 1px;
+}
+
+@media only screen and (max-width:600px){
+    .mainbanner{
+        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),url('./images/mainbanner.jpeg');
+        background-position: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 10px; */
+        margin:1px auto ;
+    }
+    .banner{
+        color: var(--mainWhite);
+        width: 60vh;
+    }
+    .row-d{
+        display: block !important;
+    }
+    .card{
+        margin-bottom: 4px;
+    }
+    .pro-Img{
+        width: 50%;
+    }
+    .product-wrapper{
+        display: block !important;
+        margin: 2px !important;
+    }
+}
